@@ -1,0 +1,891 @@
+/*GENEL AYARLAR*/
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background: #fff;
+	color: #3f3f3f;
+	font: 14px / 28px arial;
+	font-family: 'Raleway';
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.sectionHeader {
+	background: darkturquoise;
+	border-bottom: 6px solid #F0F8FF;
+	height: 60px;
+	color: #fff;
+	display: inline-block;
+	line-height: 60px;
+	font-size: 24px;
+	padding: 5px 40px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 15px;
+	color: darkturquoise;
+	font-weight: bold;
+	transition: all .4s ease;
+}
+
+.sectionArea {
+	padding: 80px 0;
+}
+
+/*GRID SETTINGS*/
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.container2 {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.featuresBody .container {
+	justify-content: space-between;
+}
+
+.col3 {
+	flex-grow: 1;
+	width: 33.33%;
+	transition: transform 0.3s ease; /* Büyüme animasyonu için geçiş efekti */
+}
+
+.col3:hover {
+	transform: scale(1.1); /* Üzerine gelince büyütme efekti */
+}
+
+.featuresBody2 .container2 {
+	justify-content: space-between;
+}
+
+.col6 {
+	flex-grow: 1;
+	width: 33.33%;
+	transition: transform 0.3s ease; /* Büyüme animasyonu için geçiş efekti */
+}
+
+.col3 {
+	flex-grow: 1;
+	width: 33.33%;
+	
+}
+
+.col6:hover {
+	transform: scale(1.1); /* Üzerine gelince büyütme efekti */
+}
+
+.engineBody .container {
+	justify-content: space-between;
+	display: flex;
+}
+
+.col2 {
+	flex-grow: 1;
+	width: 50%;
+	padding: 20px;
+}
+
+/*HOME SETTİNGS*/
+
+header .logo {
+	margin-right: auto;
+	display: flex;
+}
+
+
+header .logo img {
+	display: block;
+	height: 90px;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	padding: 27px 17px;
+	display: block;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: all .3s ease;
+}
+
+.menu li:hover a {
+	background-color: darkturquoise;
+	color: #fff;
+}
+
+#mainSlider {
+	height: 500px;
+	background: url('../img/anaekran.png') center center no-repeat;
+	background-size: cover;
+}
+
+.slider {
+	width: 100%;
+}
+
+#mainCaption {
+	height: 500px;
+	background-color: rgba(0,0,0,.4);
+}
+
+.caption {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.featuresTop {
+	text-align: center;
+}
+
+.item {
+	padding: 10px 20px;
+}
+
+.zoom {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.zoom img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all .5s ease;
+}
+
+.item .itemtext {
+	text-align: center;
+	padding: 5px;
+	border:  1px solid darkturquoise;
+}
+
+/*.item:hover .zoom img {
+	transform: scale(1.25);
+} fotoğrafı zoomlayan kod */
+
+.item:hover h3 {
+	color: #fff;
+}
+
+.item:hover .itemtext {
+	background: darkturquoise;
+	color: #fff;
+	transition: all .4s ease;
+}
+
+.btnDetails {
+	background-color: #e74c3c;
+	color: darkturquoise;
+	padding: 8px 16px;
+	border-radius: 4px;
+	text-decoration: none;
+	border: 1px solid darkturquoise;
+	transition: all .4s ease;
+	display: inline-block;
+}
+
+.item:hover .btnDetails {
+	color: #fff;
+	border: 1px solid;
+}
+
+.itemtext p {
+	margin: 18px 0;
+}
+
+/* ALAN TANITIMI*/
+
+.madde {
+	margin-top: 25px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#webgelistirme {
+	padding: 30px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+
+.alanTanitimi #webgelistirme p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.webfoto {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.idefoto {
+	width: 90%;
+}
+
+h6 {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	font-family: bold;
+}
+
+.idearayuzleri {
+	margin-top: 10px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#siberguvenlik {
+	padding: 30px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 4px;
+}
+
+.alanTanitimi #siberguvenlik p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#yapayzeka {
+	padding: 30px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 4px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.alanTanitimi #yapayzeka p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.yapayzekaveri {
+	margin-top: 40px;
+	margin-left: 110px;
+}
+
+
+#mobiluygulamalar {
+	padding: 30px;
+	padding-right: 20px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 4px;
+}
+
+.alanTanitimi #mobiluygulamalar p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.mobilbaslik {
+	color:#3E790C;
+}
+
+.mobilfoto {
+	width: 58%;
+	margin-top: 40px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#oyungelistirme {
+	padding: 30px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 4px;
+}
+
+.alanTanitimi #oyungelistirme p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.oyuntasarımcısı {
+	width: 70%;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+#robotik {
+	padding: 30px;
+	color: #000000;
+	font-size: 18px;
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+}
+
+.alanTanitimi #robotik p {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.yapayzekar {
+	width: 70%;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+.otonomarac {
+	width: 70%;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+.drone {
+	width: 70%;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+.vr {
+	width: 70%;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 120px;
+	margin-right: 250px;
+}
+
+h4 {
+	margin: 0 auto;
+	border: 6px solid #000000;
+	width: 25%;
+	background: fixed;
+	font-size: 30px;
+	padding: 30px;
+	background-color: darkturquoise;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+    color: #4682B4;
+}
+
+h5 {
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+	font-family: bold;
+	font-size: 23px;
+}
+
+
+/* PARALLAX */
+
+#parallax {
+	background: linear-gradient(
+				rgba(0,0,0, .5),
+				rgba(0,0,0, .5)
+				),
+				url('../img/parallax5.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+#parallax p {
+	color: #fff;
+}
+
+/* ENGİNE SECTİON */
+.engineTop {
+	text-align: center;
+}
+
+.engineContainer {
+	position: relative;
+	width: 100%;
+}
+
+.imageOver {
+	display: block;
+	width: 650px;
+	height: 350px;
+}
+
+.engineOverlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,206,209, .7);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay {
+	width: 100%;
+}
+
+.engineText {
+	white-space: nowrap;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.engineOverlay2 {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: rgba(0,206,209, .7);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+	width: 100%;
+	left: 0;
+}
+
+footer {
+	background: darkturquoise;
+	text-align: center;
+}
+
+.footerItem {
+	padding: 20px;
+}
+
+.footerItem img {
+	height: 50px;
+	opacity: .5;
+}
+
+footer h3 {
+	color: #fff;
+	font-size: 23px;
+	letter-spacing: 8px;
+}
+
+footer i {
+	padding: 10px;
+	font-size: 20px;
+	color:#F5FFFA;
+	line-height: 50px;
+	transition: .3s ease;
+}
+
+footer .i:hover {
+	color: #000000
+}
+
+footer p {
+	color: #F5FFFA;
+	line-height: 20px;
+}
+
+.footerLinks a {
+	text-decoration: none;
+	color: #F5FFFA;
+	letter-spacing: 2px;
+	transition: .3s ease;
+}
+
+.footerLinks a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.socialLinks li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/*  CONTACT  */
+
+.body2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkturquoise;
+}
+
+.hasbir {
+	margin-top: 50px;
+	margin-bottom: 500px;
+	color: black;
+	font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+	margin:50px auto;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.temizleBtn {
+	background-color: #2980b9; /* Arka plan rengi */
+	color: #fff; /* Yazı rengi */
+	padding: 10px 20px; /* Buton içeriği boşlukları */
+	border: none; /* Kenarlık yok */
+	cursor: pointer; /* İşaretçi türü */
+	border-radius: 5px; /* Kenar yuvarlama */
+	transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+/* Temizleme butonunun üzerine gelinceki stil */
+.temizleBtn:hover {
+	background-color: black; /* Hover rengi */
+}
+
+/* JS */ 
+
+.dark-mode {
+    background-color: darkturquoise; /* Dark mode arka plan rengi */
+    color: #fff; /* Dark mode metin rengi */
+}
+
+header .logo .mavimod {
+	height: 30px;
+	margin-top: 27px;
+}
+
+
+#saat {
+	color: #008B8B;	
+	margin-top: 27px;
+	font-size: 30px;
+}
+
+.gallery-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-bottom: 5px;
+}
+.gallery-image {
+	max-width: 100%;
+	max-height: 80vh;
+	border: 2px solid #333;
+	border-radius: 5px;
+}
+
+.sosyalmedyafb {
+    background-color: transparent; /* Arkaplan rengini şeffaf yap */
+    border: 2px solid darkturquoise; /* Kenarlık rengi ve kalınlığı */
+    color: #fff; /* Metin rengi */
+    padding: 10px 20px; /* Buton iç içe alanı */
+    font-size: 16px; /* Metin boyutu */
+    cursor: pointer; /* İmleci el işareti yap */
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+}
+
+.sosyalmedyafb:hover {
+    background-color: #3b5998; /* Üzerine gelindiğinde arkaplan rengini beyaz yap */
+    color: #333; /* Üzerine gelindiğinde metin rengini değiştir */
+}
+
+.sosyalmedyatw {
+    background-color: transparent; /* Arkaplan rengini şeffaf yap */
+    border: 2px solid darkturquoise; /* Kenarlık rengi ve kalınlığı */
+    color: #fff; /* Metin rengi */
+    padding: 10px 20px; /* Buton iç içe alanı */
+    font-size: 16px; /* Metin boyutu */
+    cursor: pointer; /* İmleci el işareti yap */
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+}
+
+.sosyalmedyatw:hover {
+    background-color: #00acee; /* Üzerine gelindiğinde arkaplan rengini beyaz yap */
+    color: #333; /* Üzerine gelindiğinde metin rengini değiştir */
+}
+
+.sosyalmedyains {
+    background-color: transparent; /* Arkaplan rengini şeffaf yap */
+    border: 2px solid darkturquoise; /* Kenarlık rengi ve kalınlığı */
+    color: #fff; /* Metin rengi */
+    padding: 10px 20px; /* Buton iç içe alanı */
+    font-size: 16px; /* Metin boyutu */
+    cursor: pointer; /* İmleci el işareti yap */
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+}
+
+.sosyalmedyains:hover {
+    background-color: #ee2a7b; /* Üzerine gelindiğinde arkaplan rengini beyaz yap */
+    color: #333; /* Üzerine gelindiğinde metin rengini değiştir */
+}
+
+
+#bulanikResim {
+	filter: blur(20px); /* Başlangıçta blur miktarı */
+	transition: filter 0.5s ease; /* Animasyon süresi ve efekti */
+}
+
+.btnDetails {
+	background-color: #3498db;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.btnDetails:hover {
+	background-color: #2980b9;
+}
+
+#bulanikResim {
+	filter: blur(0px); /* Başlangıçta blur miktarı */
+	transition: filter .5s ease; /* Animasyon süresi ve efekti */
+}
+
+#kayanGorselContainer {
+	margin-left: 950px;
+	display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala (eğer gerekirse) */
+    height: 300px;           /* Konteyneri tam ekran yap */
+    overflow: hidden;
+}
+#kayanGorsel {
+	width: 1000px; /* Görselin genişliği */
+	height: 300px;
+	position: absolute;
+	transition: transform 0.5s ease;
+	justify-content: center;
+}
+
+#sonuc {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.randomsayi {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 20px;
+	justify-content: center;
+	padding: 50px;
+}
+
+/* JQ */
+
+.star-rating {
+	font-size: 24px;
+}
+.star {
+	cursor: pointer;
+	color: magenta;
+	transition: color 0.2s;
+}
+.star.active {
+	color: black;
+}
+
+#yoketme {
+	font-size: 30px;
+	text-align: center;
+}
+
+.logohareketi {
+	text-align: center;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.key {
+    width: 100px;
+    height: 50px;
+	color: red;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: red;
+	color: white;
+}
+
+audio {
+    display: none; /* Ses dosyalarını görünmez yap */
+}
+
+#logoButton {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#logoButton:hover {
+    background-color: red;
+}
+
+#degistirBtn {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#degistirBtn:hover {
+    background-color: red;
+}
+
+#gizleGosterBtn {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#gizleGosterBtn:hover {
+    background-color: red;
+}
+
+.main-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Sayfanın ortasına hizalamak için */
+}
+
+#btn2 {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btn2:hover {
+    background-color: red;
+}
+
+/*  iFrame  */
+
+.iframe-container {
+	margin-top: -100px;
+	margin-bottom: -150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Sayfanın tamamını kaplayacak şekilde */
+}
+.iframe-container iframe {
+	width: 800px;
+	height: 450px;
+}
