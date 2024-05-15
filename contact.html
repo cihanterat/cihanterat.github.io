@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body class="body2">
+
+    <div style="text-align: center;" class="star-rating">
+        <p>Bizi Değerlendirin</p>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>        
+    </div>
+
+    <div class="gallery">
+        <img src="img/turk.png" alt="Foto 1">
+        <img src="img/osmanli.png" alt="Foto 2">
+        <h2>Bayrakların üstüne gelince otomatik değişir</h2>
+    </div>
+    <img class="main-photo" src="img/turk.png" alt="Main Photo">
+
+
+    <p id="yoketme">FORM AŞAĞIDADIR!</p>
+
+    <div class="keyboard">
+        <h2>Berserk Müzikleri</h2>
+        <div class="key" data-note="Guts">Guts</div>
+        <div class="key" data-note="Indra">Indra</div>
+        <div class="key" data-note="Behelit">Behelit</div>
+    </div>
+    <audio data-note="Guts" src="img/guts.mp3"></audio>
+    <audio data-note="Indra" src="img/indra.mp3"></audio>
+    <audio data-note="Behelit" src="img/behelit.mp3"></audio>
+    
+
+    <h1 class="hasbir">Bize Katılın</h1>
+
+    <div class="logohareketi">
+    <p id="hareket"><img style="height: 35px;" src="img/logo.png" alt=""></p>
+    <button id="logoButton">Formu Dans Ettir</button>
+    </div>
+
+    <form id="uyeForm" action="/submit-form" method="POST">
+        <div>
+            <label for="username">Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="birthdate">Doğum Tarihi:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+        <div>
+            <label for="city">Şehir:</label>
+            <select id="city" name="city">
+                <option value="istanbul">İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="kırsehir">Kırşehir</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Formu Temizle" class="temizleBtn" onclick="temizle()">
+            <input type="submit" value="Gönder">
+        </div>
+
+        <div style="display: flex;">
+        <div>
+            <p id="gizlenenMetin">BU BİR WEB ÖDEVİDİR.</p>
+            <button id="gizleGosterBtn">UYARI</button>
+        </div>
+        <div style="padding-left: 120px;">
+            <p id="degisecekMetin";>LÜTFEN BİLGİLERİ EKSİKSİZ GİRİN.</p>
+            <button id="degistirBtn">ÖNEMLİ!</button>
+        </div>
+    </form>
+
+    
+
+<div>
+    <input id="myInput" type="text" placeholder="Ara..">
+    <br><br>
+    <table>
+  <thead>
+  <tr>
+    <th>Adı </th>
+    <th>Soyadı </th>
+    <th>Email </th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Kerim</td>
+    <td>Han</td>
+    <td>kerim@example.com</td>
+  </tr>
+  <tr>
+    <td>Alan</td>
+    <td>Yusuf</td>
+    <td>alany@mail.com</td>
+  </tr>
+  <tr>
+    <td>Enes</td>
+    <td>Demir</td>
+    <td>enes@greatstuff.com</td>
+  </tr>
+  <tr>
+    <td>Şali</td>
+    <td>Tavaslı</td>
+    <td>sali@test.com</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<ol>
+    <li>Deneme</li>
+</ol>
+    <button id="btn2" style="display: block;">Yeni satır ekle</button>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
