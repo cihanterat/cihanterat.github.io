@@ -3,9 +3,925 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Cianın Mahzen</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <script src="js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
-<body>
-    <p>denemeee</p>
+<body>   
+    
+        <header>
+        <div class="container">
+            <div class="logo">
+                <span id="saat"></span>
+                <a href="index.html"><img src="img/logo.png"></a>
+                <button class="mavimod" onclick="darkModeToggle()">Arkaplanı Mavi Yap</button>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="#alanlar">ALANLAR</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Main Section-->
+
+    <section id="mainSlider" class="slider">
+            <div id="mainCaption" class="caption">
+                <h1>HANGİ ALAN SANA GÖRE ?</h1>                
+            </div>
+    </section>
+
+    <div class="gallery-container">
+        <img id="bulanikResim" src="img/web.jpg" class="gallery-image" alt="Resim 1">
+    </div>
+
+    <!--Feature Section-->
+
+    <section id="features" class="sectionArea">
+        <div class="featuresTop">
+            <h2 class="sectionHeader">BAŞLAYALIM</h2>
+            <p>Alt kısımda senin için 6 başlık sıraladık.</p>
+        </div>
+        <div id="alanlar" class="featuresBody">
+            <div class="container">
+                <div class="col3">
+                    <div class="item">
+                        <div class="zoom">
+                            <img src="img/1webgelistirme.jpg">
+                        </div>
+                        <div class="itemtext">
+                            <h3>Web Geliştirme</h3>
+                            <p>Web geliştirme, internet üzerindeki içerikleri tasarlamak, oluşturmak 
+                                ve yönetmek için kullanılan yazılım ve teknolojilerin bütünüdür.</p>
+                            <a href="#webgelistirme" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3"> 
+                    <div class="item">
+                        <div class="zoom">
+                            <img src="img/2siberguvenlik.jpg">
+                        </div>
+                        <div class="itemtext">
+                            <h3>Siber Güvenlik</h3>
+                            <p>Siber güvenlik, bilgisayar sistemlerini, ağları ve verileri 
+                                korumak için kullanılan teknolojilerin ve stratejilerin bütünüdür.</p>
+                            <a href="#siberguvenlik" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3"> 
+                    <div class="item">
+                        <div class="zoom">
+                            <img src="img/3yapayzeka.jpg">
+                        </div>
+                        <div class="itemtext">
+                            <h3>Yapay Zeka</h3>
+                            <p>Yapay zeka programlama, bilgisayar sistemlerine kendi kendine öğrenme ve problem 
+                                çözme yetenekleri kazandırmak için kullanılan yazılım ve tekniklerin bütünüdür.</p>
+                            <a href="#yapayzeka" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featuresBody2">
+                <div class="container2">
+                    <div class="col6"> 
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/4mobiluygulama.jpg">
+                            </div>
+                            <div class="itemtext">
+                                <h3>Mobil Uygulamalar</h3>
+                                <p>Mobil uygulama programlama, akıllı telefonlar ve tabletler gibi mobil cihazlar 
+                                    için yazılım geliştirme sürecini ve tekniklerini içeren disiplindir.</p>
+                                <a href="#mobiluygulamalar" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col6"> 
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/5oyungelistirme.png">
+                            </div>
+                            <div class="itemtext">
+                                <h3>Oyun Geliştirme</h3>
+                                <p>Oyun geliştirme, bilgisayar oyunları ve dijital eğlence uygulamaları için yazılım, 
+                                    grafik tasarımı ve kullanıcı deneyimi geliştirme süreçlerini içeren disiplindir.</p>
+                                <a href="#oyungelistirme" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col6"> 
+                        <div class="item">
+                            <div class="zoom">
+                                <img src="img/6robotikkodlama.jpg">
+                            </div>
+                            <div class="itemtext">
+                                <h3>Robotik Kodlama</h3>
+                                <p>Robotik kodlama, robotların hareket etmesi, algılaması ve görevleri yerine getirmesi 
+                                    için yazılım ve programlama tekniklerini kullanarak çalışmalar yapan disiplindir.</p>
+                                <a href="#robotik" class="btnDetails" onmouseover="renkDegistir(this)" onclick="sekilDegistir(this)">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="alanTanitimi">
+        <div id="webgelistirme">
+            <h4>Web Geliştirme</h4>
+            <p>Web Geliştirme alanı temel olarak ikiye ayrılır ; <span>web tasarımı (frontend)</span> ve 
+                <span>web programlama (backend)</span>. Her ikisi ile uğraşanlara full-stack web 
+                geliştirici denir.</p>
+                <div class="webfoto">
+                    <img src="img/web.png">
+                </div>
+            <h5>Peki Bir Web Geliştirici Neler Öğrenmelidir ?</h5>
+
+            <p><span>Frontend (Tasarım)</span> alanında, <span>Html, Css ve Javascript</span> konularını bilmek 
+                gerekiyor. Tasarım konusunda hazır Css kütüphanelerinden yararlanarak 
+                işlerimi daha kolaylaştıracaktır. Css kütüphanelerinden en popülerleri 
+                <span>Bootstrap, Material</span> kütüphaneleridir.</p>
+
+            <p>Bu arada sadece Html ve Css ile tasarım yapılabilir. Ancak web siteye 
+                dinamiklik(hareket) kazandıran Javascript olduğu için Frontend son 
+                zamanlarda popüler hale geldi. Javascript kütüphaneleri ise
+                <span>Jquery, Angular, React, VueJs, KnockoutJs</span> vb.</p>
+            <p>Backend (Programlama) alanında, Bu alanda kullanılan programlama dilleri;
+                <span>Asp.net, Php , Java , Python , NodeJs</span> dir.</p>
+
+            <h5>Web Geliştirmek için kullanılan araçlar ve programlar hangileridir ?</h5>
+
+            <p>Integrated Development Environment-Tümleşik Geliştirme Ortamı(IDE), yazılımcıların 
+                daha kolay bir şekilde uygulamalarını kodlayabilmesi için geliştirilen arayüzdür.
+               </p>
+            <h6>1.Brackets</h6>
+            <div class="idearayuzleri">
+                <img class="idefoto" src="img/brackets.png">
+            </div>
+            <h6>2.Visual Studio Code</h6>
+            <div class="idearayuzleri">
+                <img class="idefoto" src="img/vsc.png">
+            </div>
+            <h6>2.Atom Editörü</h6>
+            <div class="idearayuzleri">
+                <img class="idefoto" src="img/atom.png">
+            </div>
+            <p>Benim tercihim VS Code veya Brackers editörü olucaktır.</p>
+            <h5>~WEB GELİŞTİRMEYE GEÇMEDEN ÖNCE BAZI BİLGİLER~</h5>
+            <p>HTML , CSS ve JavaScript World Wide Web’in temel teknolojilerinden biri 
+               olan programlama dilleridir. İki tür web sitesi vardır. 
+               <span>Statik ve Dinamik Web</span> sitesi.</p>
+            <h5>Statik Web Site Nedir?</h5>
+            <p>Statik web siteleri, genellikle belli bir sayfa düzeni olan <span>sabit sayıda sayfadan</span> oluşur. 
+                İçerik tam anlamıyla <span>statiktir/durağandır</span> ve kullanıcı eylemlerine bağlı olarak değişmez. 
+                Not Defteri gibi basit metin düzenleyicilerde HTML ve CSS ile oluşturulur.</p>
+            <h5>Dinamik Web Site Nedir?</h5>
+            <p>Kullanıcıların sayfada listelenen bilgilerle etkileşim kurmasına olanak tanır. Dinamik web tasarım, 
+                <span>HTML ve CSS ek olarak JavaScript, PHP veya ASP</span> gibi <span>sunucu tarafı</span> kodlama dillerini kullanır.</p>
+            <h5>ARALARINDAKİ FARK NEDİR ?</h5> 
+            <p>Statik web sitelerinin temel amacı <span>bilgilendirici</span> olmaktır; 
+                dinamik web siteleri ise <span>etkileşim ve işlevsellik</span> ile karakterize edilir.</p>  
+            
+            
+        </div>
+        <div id="siberguvenlik">
+            <h4>Siber Güvenlik</h4>
+            <h5>Siber güvenlik nedir?</h5>
+            <p>Siber güvenlik; bilgisayarları, ağları, yazılım uygulamalarını, kritik sistemleri 
+                ve verileri olası dijital tehditlerden koruma uygulamasıdır. Kuruluşlar müşteri 
+                güvenini sürdürmek ve düzenleyici mevzuat uygunluğunu karşılamak için verileri 
+                güvenceye alma sorumluluğu taşır. Hassas verileri yetkisiz erişimden korumak ve 
+                bunun yanı sıra iş operasyonlarında istenmeyen ağ etkinliği nedeniyle kesinti 
+                oluşmasını önlemek için siber güvenlik önlemleri ve araçları kullanırlar. 
+                Kuruluşlar; çalışanlar, süreçler ve teknolojiler arasında dijital savunma 
+                sürecini düzene koyarak siber güvenliği uygularlar. </p>
+
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vWPgPsPcA2c?si=bW-HjIEgblpdQ3C2" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                </div>
+
+            <h6>İhlalleri önleme veya maliyetlerini azaltma </h6>
+            <p>Siber güvenlik stratejileri uygulayan kuruluşlar; işletme itibarını, finansal 
+                dayanaklarını, işletme operasyonlarını ve müşteri güvenini etkileyebilecek 
+                istenmeyen siber saldırı sonuçlarını en aza indirger. Örneğin, şirketler 
+                olası sızma durumlarını içeren ve işletme operasyonu kesintilerini en aza 
+                indirgeyen olağanüstü durum kurtarma planları hayata geçirir. </p>
+            <h6>Mevzuata uygunluğu sürdürme</h6>
+            <p>Belirli sektörlerde ve bölgelerdeki işletmeler, hassas verileri olası 
+                siber risklere karşı korumak için düzenleyici mevzuat gereksinimlerine 
+                uyum sağlamalıdır. Örneğin, Avrupa'da faaliyet gösteren şirketlerin, 
+                kuruluşların veri gizliliğini sağlayan uygun siber güvenlik önlemleri 
+                almasını öngören Genel Veri Koruma Yönetmeliği'ne (GDPR) uyum 
+                sağlaması gerekmektedir. </p>
+            <h6>Gelişen siber tehditlerin etkisini hafifletin </h6>
+            <p>Siber saldırılar değişen teknolojilerle birlikte gelişmektedir. Suçlular, 
+                yetkisiz sistem erişimi için yeni araçlar kullanmakta ve yeni 
+                stratejiler üretmektedir. Kuruluşlar, bu yeni ve gittikçe gelişen 
+                dijital saldırı teknolojileri ve araçlarıyla baş etmek için siber 
+                güvenlik önlemleri uygular ve bunları yükseltir. </p>
+            <h5>Siber güvenliğin savunma sağlamaya çalıştığı saldırı türleri nelerdir?</h5>
+            <p>Siber güvenlik uzmanları, bilgisayar sistemlerine farklı yollarla 
+                sızan yeni tehditleri kontrol altında tutmak ve etkisini hafifletmek 
+                için çabalamaktadır. Yaygın siber tehditlere ilişkin bazı örnekler 
+                aşağıda verilmiştir. </p>
+            <h6>Malware</h6>
+            <p>Malware terimi kötü amaçlı yazılım demektir. Üçüncü tarafların 
+                hassas bilgilere yetkisiz erişim elde etmesini veya kritik bir 
+                altyapının normal çalışmasını kesintiye uğratmasını sağlamak 
+                için tasarlanmış bir dizi yazılım programını içerir. Kötü amaçlı 
+                yazılımın yaygın örnekleri truva atları, casus yazılım ve virüslerdir.</p>
+            <h6>Fidye yazılımı</h6>
+            <p>Malware terimi kötü amaçlı yazılım demektir. Üçüncü tarafların hassas 
+                bilgilere yetkisiz erişim elde etmesini veya kritik bir altyapının 
+                normal çalışmasını kesintiye uğratmasını sağlamak için tasarlanmış 
+                bir dizi yazılım programını içerir. Kötü amaçlı yazılımın yaygın 
+                örnekleri truva atları, casus yazılım ve virüslerdir.</p>
+            <h6>Ortadaki adam saldırısı</h6>
+            <p>Ortadaki adam saldırısı, dışarıdaki bir tarafın veri alışverişi 
+                sırasında bir ağ üzerinden yetkisiz erişim sağlama girişimini içerir. 
+                Bu gibi saldırılar, finansal veriler gibi hassas bilgilere ilişkin 
+                güvenlik risklerini artırır.</p>
+            <h6>Kimlik hırsızlığı</h6>
+            <p>Kimlik hırsızlığı, kimliği tanımlayabilecek bilgileri ifşa etmeleri 
+                için kullanıcıları kandırmaya yönelik sosyal mühendislik tekniklerini 
+                kullanan bir siber tehdittir. Örneğin, siber saldırganlar 
+                kullanıcıların sahte bir ödeme web sayfasına tıklayarak bu sayfaya 
+                kredi kartı verilerini girmelerine neden olan e-postalar gönderirler. 
+                Kimlik hırsızlıkları aynı zamanda şirket cihazlarına kötü amaçlı 
+                yazılım yükleyen zararlı eklerin indirilmesiyle de sonuçlanabilir.</p>
+            <h6>DDoS</h6>
+            <p>Dağıtılmış hizmet reddi saldırısı (DDoS), yüksek hacimde sahte 
+                istek göndererek bir sunucuya aşırı yüklenmeyi içeren koordinasyonlu 
+                bir çabadır. Bu gibi etkinlikler, normal kullanıcıların hedeflenen 
+                sunucuya bağlanmasını veya bu sunuculara erişmesini engeller. </p>
+            <h6>Ortadaki adam saldırısı</h6>
+            <p>Ortadaki adam saldırısı, dışarıdaki bir tarafın veri alışverişi 
+                sırasında bir ağ üzerinden yetkisiz erişim sağlama girişimini içerir. 
+                Bu gibi saldırılar, finansal veriler gibi hassas bilgilere ilişkin 
+                güvenlik risklerini artırır. </p>
+            <h5>Siber güvenlik nasıl çalışır? </h5>
+            <p>Kuruluşlar, siber güvenlik stratejilerini sürece siber güvenlik 
+                uzmanları dahil ederek uygular. Bu uzmanlar mevcut bilgi işlem 
+                sistemlerinin, ağların, veri depolamanın, uygulamaların ve diğer 
+                bağlı cihazların güvenlik risklerini değerlendirir. Ardından, 
+                siber güvenlik uzmanları kapsamlı bir siber güvenlik çerçevesi 
+                oluşturur ve koruyucu önlemleri kuruluşta hayata geçirir.</p>
+            <p>Başarılı bir siber güvenlik programı, çalışanları en iyi güvenlik 
+                uygulamaları konusunda eğitmeyi ve mevcut BT altyapısı için 
+                otomatikleştirilmiş siber savunma teknolojilerinden faydalanmayı 
+                içerir. Bu bileşenler, tüm veri erişim noktalarında olası 
+                tehditlere karşı birden çok katmanlı bir koruma oluşturmak için 
+                birlikte işlev gösterir. Bunlar riskleri saptar, kimlikleri, 
+                altyapıyı ve verileri korur, anormallikleri ve etkinlikleri algılar, 
+                temel nedeni analiz ederek buna yanıt verir ve bir olay sonrasında 
+                kurtarma gerçekleştirir. </p>
+            <h5>Siber güvenlik türleri nelerdir?</h5>
+            <p>Güçlü bir siber güvenlik yaklaşımı, bir kuruluş dahilinde önem 
+                verilen aşağıdaki hususları ele alır. </p>
+            <h6>Kritik altyapı siber güvenliği</h6>
+            <p>Kritik altyapı; enerji, iletişim ve ulaşım gibi toplum için önemli 
+                olan dijital sistemlere atıfta bulunur. Kesinti veya veri kaybı 
+                toplumun dengesini bozacağından, bu alanlardaki kuruluşlar sistematik 
+                bir siber güvenlik yaklaşımına ihtiyaç duyar. </p>
+            <h6>Ağ güvenliği</h6>
+            <p>Ağ güvenliği, bir ağa bağlı bilgisayar ve cihazlara yönelik siber 
+                güvenlik korumasıdır. BT ekipleri, kullanıcı erişimini düzenlemek 
+                ve belirli dijital varlıklar için izinleri yönetmek amacıyla 
+                güvenlik duvarları ve ağ erişimi denetimi gibi ağ güvenliği 
+                teknolojilerini kullanırlar. </p>
+            <h6>Bulut güvenliği</h6>
+            <p>Bulut güvenliği, bulutta çalışan verileri ve uygulamaları korumak 
+                için bir kuruluşun aldığı önlemleri tanımlar. Bu, ölçeklenebilir 
+                bir ortamda müşteri güvenini güçlendirmek, hata toleranslı 
+                operasyonlar sağlamak ve veri gizliliği düzenlemelerine uyum 
+                sağlamak için önemlidir. Güçlü bir bulut güvenliği stratejisi, 
+                bulut sağlayıcısı ile kuruluş arasında paylaşılan sorumluluk içerir. </p>
+            <h6>IoT güvenliği</h6>
+            <p>Nesnelerin İnterneti (IoT) terimi, internet üzerinde uzaktan 
+                çalışan elektronik cihazlara atıfta bulunur. Örneğin, akıllı 
+                telefonunuza düzenli aralıklarla güncellemeler gönderen bir akıllı 
+                alarm bir IoT cihazı olarak değerlendirilir. Bu IoT cihazları, 
+                sürekli bağlantı ve gizli yazılım hataları nedeniyle ek bir güvenlik 
+                riski katmanına neden olur. Bu nedenle, farklı IoT cihazlarının 
+                olası risklerini değerlendirip hafifletmek için ağ altyapısına güvenlik 
+                politikaları dahil etmek temel önem taşır. </p>
+            <h6>Veri güvenliği</h6>
+            <p>Veri güvenliği, taşınan ve bekleyen verileri güçlü bir depolama 
+                sistemi ve güvenli bir veri aktarımıyla korur. Geliştiriciler, 
+                olası veri ihlallerine karşı operasyonel dayanıklılık sağlamak 
+                için şifreleme ve yalıtılmış yedekler gibi koruyucu önlemleri 
+                kullanır. Bazı durumlarda, geliştiriciler depolama gizliliğine 
+                ve operatör erişimini kısıtlamaya yönelik olarak AWS Nitro 
+                Sistemi'ni kullanır. </p>
+            <h6>Uygulama güvenliği</h6>
+            <p>Uygulama güvenliği; tasarım, geliştirme ve test aşamaları sırasında 
+                bir uygulamanın korumasını yetkisiz manipülasyona karşı güçlendirmeye 
+                yönelik koordinasyonlu bir çabadır. Yazılım programcıları, güvenlik 
+                risklerini artırabilecek hataları önlemek için güvenli kodlar yazarlar.</p>
+            <h6>Uç nokta güvenliği</h6>
+            <p>Uç nokta güvenliği, kullanıcılar bir kuruluşun ağına uzaktan 
+                eriştiğinde ortaya çıkan güvenlik risklerini ele alır. Uç nokta 
+                güvenliği koruması, cihazlardaki dosyaları tarar ve tehlike 
+                algıladığında bunların etkisini hafifletir. </p>
+            <h6>Olağanüstü durum kurtarma ve iş sürekliliği planlaması</h6>
+            <p>Bu, bir kuruluşun siber güvenlik olaylarına hızlıca yanıt verirken 
+                çok az veya sıfır kesintiyle çalışmaya devam etmesine olanak 
+                tanıyan acil durum planlarını tanımlar. Bunlar, veri kayıplarına 
+                karşı olumlu yanıtlar vermek üzere veri kurtarma politikaları 
+                hayata geçirirler. </p>
+            <h6>Son kullanıcı eğitimi</h6>
+            <p>Bir kuruluş dahilindeki çalışanlar, siber güvenlik stratejilerinin 
+                başarısını temin etmede hayati bir role sahiptir. Eğitim; 
+                çalışanların, şüpheli e-postaları silme ve şirket aygıtlarına 
+                bilinmeyen USB cihazlarını takmaktan kaçınma gibi en iyi güvenlik 
+                uygulamalarıyla eğitilmesi bakımından kilit önem taşır. </p>
+            <h5>Modern siber güvenlik teknolojileri nelerdir?</h5>
+            <p>Bunlar, kuruluşların verilerini güvenceye almasına yardımcı 
+                olan modern siber güvenlik teknolojileridir. </p>
+            <h6>Davranışsal analiz</h6>
+            <p>Davranışsal analiz, şüpheli etkinlikleri ve anormal düzenleri 
+                tespit etmek üzere cihazlardan ve ağlardan yapılan veri 
+                aktarımını izler. Örneğin, BT güvenlik ekibine veri aktarımındaki 
+                ani artışlar veya belirli cihazlara indirilen şüpheli dosyalar 
+                konusunda uyarı gönderilir.</p>
+            <h6>Sızma algılama sistemi</h6>
+            <p>Kuruluşlar, bir siber saldırıyı saptamak ve hızlıca yanıt vermek
+                için sızma algılama sistemlerini kullanır. Modern güvenlik 
+                çözümleri, kuruluşun bilgi işlem altyapısındaki durağan tehditleri 
+                ortaya çıkarmak için makine öğrenimini ve veri analizini kullanır. 
+                Sızma savunma mekanizması ayrıca bir olay durumunda, olayın kaynağını 
+                keşfetmesi için güvenlik ekibine yardımcı olan bir veri izi toplar. </p>
+            <h6>Bulut şifreleme</h6>
+            <p>Bulut şifreleme, verileri bulut veritabanlarında depolamadan 
+                önce bunları karıştırır. Bu, yetkisiz tarafların verileri olası 
+                ihlallerde bulunacak şekilde kötüye kullanmasını önler. Kuruluşlar, 
+                AWS iş yüklerindeki veri şifrelemeyi kontrol altına almak için AWS 
+                Anahtar Yönetimi Hizmeti'ni kullanır.</p>
+        </div>
+
+
+        <div id="yapayzeka">
+            <h4>Yapay Zeka</h4>
+            <h5>1. Yapay zeka nedir?</h5>
+            <p>Yapay zeka, dar zeka ve yapay genel zeka olarak ikiye ayrılmaktadır.</p>
+            <p><strong>Yapay genel zeka;</strong> biyolojik olarak insan sinir sisteminden esinlenerek 
+                matematiksel olarak tasarlanan 
+                <span>görsel algılama, konuşma ve ses tanıma, hareket, muhasebe ve muhakeme </span>
+                yeteneğine sahip, kendi kendine öğrenme işlemlerini sürdürebilen 
+                yazılımsal ve donanımsal sistemler bütünüdür.</p>
+            <p><strong>Yapay dar zeka</strong> ise belirli bir problemin çözümü için geliştirilen ve 
+                <span>veriden</span> öğrenen dar kapsamlı yapay zeka sistemleridir.</p>
+            <h5>2. Yapay zeka öğrenmek zor mu? Kendi kendime öğrenebilir miyim?</h5>
+            <p>Hayır, zor değil. Ancak yapay zeka, <span>ciddi</span> anlamda zaman ayırıp çalışmayı 
+                gerektiren bir alandır. Üniversitelerde, bilimsel konferanslarda, online eğitim 
+                platformlarında, bloglarda ve Youtube’da yer alan</p>
+            <ol>
+                <li class="madde">-dokümanları,</li>
+                <li class="madde">-videoları,</li>
+                <li class="madde">-açık kaynaklı uygulamaları,</li>
+                <li class="madde">-akademik makaleleri</li>
+            </ol>
+            <p>takip ederek seviyenize uygun şekilde kendi kendinize de öğrenmeniz mümkündür.</p>
+            <h5>3. Yapay zeka algoritmalarını ve matematiğini nereden öğrenebilirim?</h5>
+            <p>Yapay zekanın temelini öğrenmek önemlidir. Aksi halde geliştirici değil uyarlayıcı olursunuz. Bu yüzden 
+                <span>yapay sinir ağları (artificial neural networks), makine öğrenmesi (machine learning),</span>
+                <span>işlemsel zeka (computational intelligence), derin öğrenme (deep learning)</span> 
+                gibi temel dersleri mutlaka takip etmelisiniz</p>
+            <h5>4. Yapay zeka için hangi programlama dillerini tercih etmeliyim?</h5>
+            <ol>
+                <li class="madde"><strong>·Python (%57),</strong></li>
+                <li class="madde"><strong>·C/C++ (%44),</strong></li>
+                <li class="madde"><strong>·Java (%41),</strong></li>
+                <li class="madde"><strong>·R (%37), ve</strong></li>
+                <li class="madde"><strong>·JavaScript (%28) dir.</strong></li>
+            </ol>
+            <p>Özellikle <span>Python</span> birçok derin öğrenme kütüphanesinin arka planında kullanılmasından 
+                dolayı en çok tercih edilen programlama dili iken veri görselleştirme içinse en tercih edilen dil R’dır. 
+                Python programlama dilinin bir diğer avantajı da hem akademik hem ticari uygulamalar için kullanılabilmesidir.</p>
+            <p><span>IEEE Spectrum’un</span> 2018 için hazırladığı programlama dillerinin kullanımıyla ilgili araştırmanın sonuçları da şöyle:</p>
+            <div class="idearayuzleri">
+                <img class="yapayzekaveri" src="img/yapayzekaveri.webp">
+            </div>
+            <h5>5. Makine öğrenmesi ve Optimizasyon için kullanılabilecek diğer alternatifler nelerdir?</h5>
+            <p>Elbette sadece 4. sorudaki programlama dilleri kullanılmamaktadır. 
+                En popüler 5 dilden sonra tercih edilen diğer ortamlar aşağıdaki gibidir:</p>
+            <ol>
+                <li class="madde"><strong>·Scala</strong></li>
+                <li class="madde"><strong>·Julia</strong></li>
+                <li class="madde"><strong>·Ruby</strong></li>
+                <li class="madde"><strong>·Octave</strong></li>
+                <li class="madde"><strong>·MatLab</strong></li>
+                <li class="madde"><strong>·SAS</strong></li>
+            </ol>
+            <h5>6. Yapay zeka uygulaması geliştirmek için hangi araçları kullanmalıyım?</h5>
+            <p><strong>Kendi Bilgisayarınızda:</strong></p>
+            <p>Kullandığınız programlama diline göre uygun 
+                <span>IDE (Integrated Development Environment-Tümleşik Geliştirme Ortamı)</span> 
+                seçimi yapmalısınız. Örneğin en çok kullanılan Python dilinde çalışıyorsanız 
+                <span>Anaconda (Package Management Tool-Paket Yönetim Servisi)</span> 
+                <span>ve/veya Visual Studio Code, Java için Eclipse</span> tercih edebilirsiniz.</p>
+            <p><strong>Ücretsiz bulut ortamında:</strong></p>
+            <p><span>Microsoft Azure Notebook (sadece CPU)</span> ve <span>Google Colab (GPU desteği var)</span>
+                herhangi bir kurulum gerektirmeksizin uygulamanızı geliştirmenizi sağlamaktadır.</p>
+            <h5>7. Hangi problem için hangi modelleri tercih etmeliyim/öğrenmeliyim?</h5>
+            <p>Bunun için daha önce benzer problemlere nasıl yöntemler uygulanmış incelemeniz gerekir. 
+                Literatür taraması yapmanız şart ancak Andrew Ng’in Geoffrey Hinton ile yapmış olduğu 
+                “Derin Öğrenmenin Kahramanları” isimli röportajda Hinton’ın da söylediği gibi 
+                literatürde boğulmadan <span>uygulamaları inceleyip</span> yolunuza bakmalısınız. 
+                Teoriye hakim olmanız uygun modeli tasarlayabilmeniz için size gerekli bilgi 
+                birikimini sağlayacaktır. Çevrenizle fikir alışverişi yapmayı unutmayın!</p>
+            <ol>
+                <li class="madde"><strong>·CNN</strong>(Convolutional Neural Networks-Evrişimli Sinir Ağları): Nesne tanıma ve takip etme, stil transferi, kanser tespiti vb.</li>
+                <li class="madde"><strong>·LSTM</strong>(Long Short Term Memory-Uzun-Kısa Süreli Bellek): Doğal dil işleme, çeviri, chatbot, finans uygulamaları vb.</li>
+                <li class="madde"><strong>·GAN</strong>(Generative Adversarial Networks-Çekişmeli Üretici Ağlar): Sentetik veri üretme, sahte yüz üretme, stil transferi vb.</li>
+                <li class="madde"><strong>·RL</strong>(Reinforcement Learning-Pekiştirmeli Öğrenme): Kendi kendine ve az veriyle öğrenen yapay zeka sistemleri vb.</li>
+            </ol>
+            <h5>8. Yapay zeka çalışırken neden ve ne kadar veriye ihtiyaç var?</h5>
+            <div class="idearayuzleri">
+                <img class="yapayzekaveri" src="img/yapayzekaveri2.webp">
+            </div>
+            <p>Yapay zeka veriden öğrenen ve veriye ihtiyaç duyan bir araştırma alanıdır. 
+                Verinin <span>hacmi, çeşitliliği ve sayıca fazlalığı</span> büyüklüğünü gösteren 3 temel kavramdır. 
+                Verinin üretim hızı da bugün yapay zeka uygulamalarının iyileşmesi ve 
+                gerçekçi sonuçlar üretmesine destek ve itici bir güçtür.</p>
+            <h5>9. Yapay zeka algoritmalarının eksiklikleri ve fazlalıkları nelerdir?</h5>
+            <p>Özellikle derin öğrenme özelinde konuşacak olursak; 
+                <span>nesne tanıma, yüz tanıma, anomali tespiti, doğal dil işleme, çeviri</span>
+                vb. problem sahalarında çok fazla veri ihtiyacı bulunmaktadır. Veriye çok fazla 
+                ihtiyaç olmayan, sıfırdan kendi kendine öğrenmeye çalışan modellerle 
+                (Reinforcement Learning vb.) ise henüz bilgisayar oyunları dışında gündelik problemlere 
+                çözümler bulunamamaktadır. Bu süreçte, gelişimine yapay zeka alt dallarında eksiklikler olacaktır,
+                bu da yeni çalışma alanları yaratacaktır.</p>
+        </div>
+
+
+        <div id="mobiluygulamalar">
+            <h4>Mobil Uygulamalar</h4>
+            <p>Günümüzün olmazsa olmazlarından biri olan Mobil Uygulamalar, 
+                hayatımızın her alanında, yaşamımızı kolaylaştırıyor. 
+                <span>Mobil Uygulama</span> kullanımı günden günde hızlı bir şekilde artıyor. 
+                Farklı firmalar kullanıcılarının, müşterilerinin veya 
+                çalışanlarının hayatlarını <span>kolaylaştırabilmek</span> için mobil 
+                uygulamalar öne sürüyor.</p>
+            <h5>Hedef Kitlenizi Belirleyin</h5>
+            <p>Mobil uygulama geliştirirken sorulması gereken soruların başında 
+                mobil uygulamanın <span>kimlere hitap edeceği</span> ve ağırlıklı olarak 
+                kimler tarafından kullanılacağıdır. Mobil uygulama geliştirirken 
+                <span>hedef kitlenizin ilgisini çekecek</span> detayları atlamayın.</p>
+            <h5>Basitlik ve Kolaylık</h5>
+            <p>Bilgiye kolayca ulaştığımız günlerdeyiz. Bunu göz önüne alarak 
+                karmaşık ve sıkıcı süreçleri olan uygulamalardansa <span>basit ve kolay</span>
+                olana odaklanmak ve <span>kullanıcı dostu</span> bir mobil uygulama 
+                geliştirmek, kullanıcıların uygulama ile etkileşimini 
+                arttırmada büyük önem taşır.</p>
+            <h5>Farklı İşletim Sistemlerine Göre Tasarlayın</h5>
+            <p>Farklı işletim sistemleri kullanan kullanıcılar hedef kitleniz 
+                belirlendiğinde <span>her platforma uyum sağlayabilen</span> 
+                bir uygulama geliştirmek de zorunluluk haline gelmekte. 
+                <span>Android ve IOS</span> gibi işletim sistemlerine uygun ve 
+                sorunsuz çalışan bir uygulama çok daha fazla kişiye hitap 
+                etmektedir.</p>
+            <h5>Uyumluluk</h5>
+            <p>Mobil uygulamanızın işletim sistemi çeşitliliğinin yanında 
+                <span>masaüstü, tablet ve akıllı telefon</span> gibi platformlarda da 
+                problemsiz bir şekilde çalışıp çalışmadığını kontrol edin. 
+                Mobil uygulamanızın <span>birden fazla cihazdan ulaşılabilirliğini</span> ve 
+                farklı cihazlardan girildiğinde uygulama içindeki görsel, 
+                yazı gibi etkenlerin ekran genişliğine göre <span>yeniden şekillenmesini</span> 
+                sağlayın.</p>
+            <h5>İyi Tasarım</h5>
+            <p><span>İlgi çekici ve canlı</span> tasarım ögeleri ile mobil uygulamanızı çok
+                daha çekici hale getirebilirsiniz. Farklı tasarım ögelerini 
+                bir araya getirerek ve <span>renk uyumları</span> ile uygulamanızı ön plana 
+                çıkarmayı deneyin.</p>
+            <h5>Bir hedefe odaklanın</h5>
+            <p>Mobil uygulama tasarlarken ekranda aynı anda <span>pek çok seçeneğin</span> 
+                olması karışıklığa neden olur. Bu sebeple uygulamanızı her sayfada 
+                tek hedefe odaklayarak <span>minimalist</span> davranmanız kullanıcılarınızın 
+                kafa karışıklığını önler. </p>
+            <h5>Grid kullanımı önemli</h5>
+            <p>Mobil uygulamanızı grid yapı ile tasarlamak <span>birbirleri ile orantılı</span> 
+                bir deneyim sağladığı için zihindeki görsel bağlantıyı arttırarak <span>rahat</span> 
+                bir kullanım sunar.</p>
+
+            <h5 class="mobilbaslik">Eğer siz de yazılım bilgisine sahipseniz ve Android telefonlar için mobil uygulama 
+                geliştirmek istiyorsanız bu aşamaları izlemelisiniz:</h5>
+            <div>
+                <img class="mobilfoto" src="img/mobil.jpg">
+            </div>
+            <p>Öncelikle Android uygulama geliştirmeye başlamak için mobil uygulama 
+                geliştirme programları ile işe başlamanız gerekmektedir. Android 
+                telefonlar için yazılım yapabileceğiniz birçok platform bulunmaktadır.</p>
+            <h5>Eclipse ve AndroidStudio</h5>
+            <p>Android bir yazılım için mobil uygulama geliştirebilecek entegre geliştirme 
+                ortamı (IDE) olan <span>Eclipse, XML ve Java</span> dosyalarınızı düzenlemeye alabilir ve 
+                uygulamanıza ait olan kanalları oluşturmaya başlayabilirsiniz. Eclipse’i 
+                Google’dan edinebilir, uygulamanızı geliştirebilir ve 
+                <span>hatta uygulamanızı bir üst sürüme taşıyabilirsiniz</span>.</p>
+            <p>AndroidStudio, Eclipse’e göre daha <span>hızlı</span> hizmet veren bir alt yapıya sahiptir ancak 
+                Eclipse’e göre daha fazla hata çıkarması söz konusudur. Bu yönden genel olarak, 
+                daha hızlı bir şekilde geleceğe ilerlemek isteyenlerin tercih ettikleri platformun 
+                <span>AndroidStudio</span> olduğunu söyleyebilmekteyiz.</p>
+            <h5>Android SDK Aracılığı ile ADB</h5>
+            <p>ADB’nin amacı uygulama geliştiricilerini <span>asiste</span> etmektir. ADB aracılığı ile Android 
+                cihazların yazılımları üzerinde değişiklik gerçekleştirebilir ve uygulama 
+                yüklemesi yapabilirsiniz. </p>
+            <h5>Android Developer Guidelines</h5>
+            <p>Bir rehber görevi gören Android Developer Guidelines resmi bir yazılım olarak uygulama 
+                geliştiricilere yardımcı olmakta ve ipuçları vermektedir. Temel olarak <span>IDE ve ADB</span>
+                bilgisine sahip olmak yetecektir.</p>
+            <h5>Android Design Guidelines</h5>
+            <p>Android yazılım işi için mucizevi nitelikte olan bir mobil uygulama geliştirme platformları 
+                arasında estetik ve görsel bilginizi konuşturmaya başlayacağınız platform Android Design 
+                Guideliness’tir. <span>Temel animasyonlar, sayfalar</span> ve daha birçok içeriği oluştururken  
+                <span>görsel güçten</span> faydalanmak için bu rehberi kullanmak oldukça faydalı olacaktır. </p>
+            <h5>GitHub ve BitBucket</h5>
+            <p>Android uygulamaları çok sayıda dosya ve klasörden meydana gelmektedir ve her 
+                birinin <span>düzeni, varlığı, ismi, numarası</span> gibi ince detayları yazılımın doğru 
+                işlemesi için çok büyük önem taşımaktadır.</p>
+            <h5>IOS’dan bahsedecek olursak:</h5>
+            <p><span>JS ve HTML5</span> kullanarak ios’ta mobil uygulama geliştirmek mümkün. Ancak <span>HTML5 ve JS’yi</span>
+                kullanarak mobil uygulama geliştirmek mantıklı görünüyor olabilir fakat bunu yapmak 
+                için <span>framework</span> kullanmamız gerekmekte. <span>Frameworkten</span> kısaca bahsedecek olursak, 
+                kullanılmaya hazır kod parçalarının birleşmesine denir. Bu frameworkler, tıpkı native 
+                uygulamalardaki gibi cihazın <span>donanımına erişebilme, tasarım bütünlüğü oluşturabilme</span> vb. 
+                gibi mobil uygulama ihtiyaçlarını karşılayabilmeyi sağlıyor. Bunlar olmaksızın bir uygulama 
+                geliştirmek oldukça zor ve kullanışsız olacaktır.</p>
+            <p><span>JS, CSS3 ve HTML5</span> yazılım dillerini kullanarak olağanüstü efektler ve cihazın neredeyse 
+                tümüne erişim imkanı sağlanması sayesinde birçok işlem içeren uygulamalar yapılabilmektedir. </p>
+            
+
+        </div>
+        <div id="oyungelistirme">
+            <h4>Oyun Geliştirme</h4>
+            <h5>Nasıl Oyun Geliştirici Olunur?</h5>
+            <p>Teknolojinin kapsamlı bir şekilde gelişmesi ile birlikte alışılagelmiş pek çok konuda 
+                değişikliklerin yaşanması kaçınılmaz hale geliyor. Teknolojinin etkilediği konulardan 
+                biri de hiç şüphesiz oyun kültürü oluyor. Oyuncuların keyifli ve eğlenceli dakikalar 
+                geçirmesini sağlayan bilgisayar oyunları, aynı zamanda oyuncunun etkileşimli bir oyun 
+                deneyimine sahip olmasını sağlıyor.</p>
+            <p>Dikkat çekici grafikleri ve teknolojileri ile öne çıkan oyunlar, 
+                <span>mobil uygulama ve oyun geliştiricisi</span> olarak tanımlanan kişiler tarafından tasarlanıyor. 
+                Oyun geliştiricileri, oyuncuların farklı istekleri ve ihtiyaçları doğrultusunda çeşitli 
+                konseptlere sahip olan oyunları oluşturuyor ve kullanıcıların beğenisine sunuyor. 
+                Farklı projelere imza atan oyun geliştiricileri, 
+                <span>tasarım, yazılım ve daha pek çok konuda</span> uzmanlık sahibi oluyor. </p>
+            <div class="idearayuzleri">
+                <img class="yapayzekaveri2" src="img/oyungelistiricisi.jpg">
+            </div>
+            <p>Modern dünyanın gözde mesleklerinden biri olan oyun geliştiriciliği, geniş bir iş alanı 
+                sunması ile de dikkat çekiyor. Oyun geliştiricileri yarı zamanlı ya da tam zamanlı olarak 
+                oyun stüdyolarında, <span>oyun şirketlerinde ya da oyun geliştirme ekiplerinde görev alma fırsatına</span> 
+                sahip oluyor. Oyun geliştiricisi olarak çalışan kişiler, oyun geliştirme çalışmasının 
+                <span>‘’yazılım’’</span> kısmında görev alıyor. Bu noktada geliştirilen oyunun türüne ve 
+                konseptine göre, oyun geliştiricisinin farklı uzmanlık alanlarına sahip olması gerekebiliyor. 
+                Game Development olarak bilinen ve sektörde görev almak isteyen kişilerin birtakım niteliklere sahip olması gerekiyor. 
+                Eğer siz de oyun geliştirici olmak istiyor ve bu alanda uzmanlık sahibi olmak istiyorsanız; 
+                içeriğimizden kapsamlı bir şekilde bilgi sahibi olabilirsiniz.</p>
+            <h5>Oyun Geliştirici Olmanın Yolları </h5>
+            <p><strong>● İlgili Alanlarda Lisans Eğitimi Almak:</strong> Oyun geliştiricisi olarak mesleğini icra etmek istiyor 
+                ve bu alanda kendinizi geliştirmek istiyorsanız öncelikle eğitiminizi lisans derecesi ile tamamlamanızda 
+                fayda var. Oyun geliştirici üniversite bölümleri genellikle <span>yazılım ve bilgisayar bilimi</span> temelli oluyor. 
+                İlgili alanlarda lisans diplomasına sahip olduğunuz takdirde her zaman bir adım önde olabilir, 
+                teorik bilgilerinizi pratik bilgilerinizle harmanlayarak iş hayatında faaliyetlerini sürdürebilirsiniz. 
+                Ayrıca lisans eğitimi oldukça faydalı olsa da farklı eğitimler alarak ve kendinizi geliştirerek yazılım 
+                sektöründe yer alabilirsiniz.</p>
+            <p><strong>● Kod Yazımı:</strong> Oyun geliştiriciliği alanında kod yazma işlemi oldukça önemli bir yere sahip. 
+                Kod yazımı ile oyun geliştiricileri ilgili oyunu tasarlıyor ve şekillendiriyor. Kod yazımının yanı 
+                sıra <span>Lua, Python, C, C++</span> ve daha pek çok farklı programlama dili hakkında da bilgi sahibi olmalı, 
+                yazılım mühendisliği alanındaki bilgi ve becerilerinizi geliştirmelisiniz. </p>
+            <p><strong>● C++ Yazılım Dilinin Önemi: </strong>Dünyada en çok bilinen programlama dillerinden biri olan 
+                C++ yazılım dili, oyun geliştiriciliği alanında sağlam bir temel oluşturabilmeniz açısından oldukça 
+                önemli bir yere sahip. Pek çok farklı alanda kullanılan C++ yazılım dilini mutlaka öğrenmeli, 
+                <span>güncel kod ve basit dil örneklerini</span> dikkatli bir şekilde incelemelisiniz. </p>
+            <p><strong>Unity Aracı: </strong>Oldukça güçlü bir geliştirme aracı olan Unity, <span>masaüstü ve mobil oyunların</span> 
+                ve <span>gerçek zamanlı simülasyonların</span> geliştirilmesinde sıklıkla tercih ediliyor. Siz de Unity konusunda bilgi 
+                sahibi olarak oyun geliştiriciliği alanında yol katedebilirsiniz.</p>
+            <p><strong>● Unreal Engine: </strong><span>Gerçek zamanlı geliştirme araçlarını</span> benimsiyor oluşu ile dikkat çeken 
+                Unreal Engine, mutlaka bilgi sahibi olmanız gereken hususlar arasında yer alıyor.</p>
+            <h5>Oyun Geliştirici Hangi Özelliklere Sahip Olmalı?</h5>
+            <p>İyi bir oyun geliştirici, oyunun dikkat çekiciliğini artırmalı ve geliştirdiği oyunun keyif verici bir deneyime 
+                dönüşmesini sağlamalı. İşte tam da bu noktada oyun geliştiricinin birtakım özelliklere sahip olması gerekiyor. 
+                Siz de <span>‘’Game Developer nasıl olunur?’’</span> sorusunun cevabını merak ediyorsanız aşağıdaki maddelere 
+                göz atabilirsiniz. </p>
+            <p><strong>● Oyun Sektörüne Hakim Olmalısınız: </strong>Başarılı bir oyun geliştirici olmak istiyorsanız oyun 
+                sektörüne hakim olmalı, piyasada bulunan her türlü oyunu ayrıntılı bir şekilde incelemelisiniz. 
+                Aynı zamanda kullanıcılar tarafından daha çok ilgi gören oyun türlerini belirlemeli, bu oyunların 
+                neden tercih edildiği hakkında rapor oluşturabilme kabiliyetine sahip olmalısınız. </p>
+            <p><strong>● Oyunları Tasarımsal Açıdan Gözlemleyebilmelisiniz: </strong>Üzerinde çalıştığınız oyunu 
+                tasarım özellikleri açısından dikkatli bir şekilde incelemelisiniz. Böylelikle görsel hafızanızı 
+                da geliştirebilir, oyun geliştiriciliği alanında önemli işlere imza atabilirsiniz. </p>
+            <p><strong>● Kod Yazımı Alanında Kendinizi Geliştirmelisiniz: </strong>Eğer bir oyunu baştan yaratmak 
+                ve piyasaya sunmak istiyorsanız mutlaka kod yazımı konusunda bilgi sahibi olmanız gerekir. 
+                Kod yazımı alanında teknik bilgiye sahip olduğunuz takdirde; tasarladığınız oyunu hayata geçirebilir, 
+                somut bir başarı elde edebilirsiniz. </p>
+            <p><strong>● Detaylara Hakim Olmalısınız: </strong>Oyun geliştirici olarak mesleğini icra ederken teknik
+                ve donanımsal detaylara hakim olmalısınız. Aynı zamanda program yazılım dili ve motoruna da hakim 
+                olabilmeniz önem arz ediyor. </p>
+            <p><strong>● Takım Çalışmasına Yatkın Olmalısınız: </strong>Oyun geliştirme süreci, bilgi ve beceri 
+                sahibi bir ekip tarafından kreatif bir şekilde sürdürülür. Bu noktada ekipte yer alan kişiler, 
+                geliştirilen oyunu farklı perspektiflerden inceler ve oyunu daha dikkat çekici bir hale getirmenin 
+                yollarını arar. Eğer siz de oyun geliştirici olmak istiyorsanız ekip çalışmasına yatkın, 
+                çeşitli bakış açıları ve disiplinler kazanmaya açık olmalısınız. Ekip çalışmasına yatkın olmakla 
+                beraber; sistematik ve modüler bir şekilde düşünebilmeli, oyun dünyasındaki gelişmeleri aktif bir 
+                şekilde takip edebilmeli ve proje teslim tarihine uyabilmelisiniz.</p>
+            <h5>Oyun Geliştirici Hangi Pozisyonlarda Görev Alabilir?</h5>
+            <p>Oyun geliştiriciliği, modern dünyada en çok ilgi gören pozisyonlar arasında yer alıyor Teknolojinin 
+                gelişmesi ve oyun geliştiriciliğinin artması ile bu alanda çalışacak kişilere ihtiyaç duyuluyor. 
+                Oyun geliştirici olarak çeşitli alanlarda görev alabileceğiniz pek çok pozisyon bulunuyor. 
+                <span>Oyun geliştirici iş ilanlarında yer alan pozisyonlar</span> şu şekilde sıralanabilir; </p>
+            <p><strong>● Oyun Tasarımcısı: </strong>Video oyunlarının dünyalarını ve kavramlarını yaratma 
+                konusunda uzman olarak mesleğini icra eden oyun tasarımcıları; oyunun türü, hikayesi, ortamı, 
+                sistemi, karakterleri ve kullanıcı deneyimi tasarımları ile ilgilenir. Oyun tasarımcısı olarak
+                çalışırken oyunun hikayesini yazmalı ve oyun örgüsünü belirlemelisiniz. Aynı zamanda oyun 
+                yönlendirici hedefleri de belirlemeli, oyunun özel ihtiyaçlarını karşılamalısınız. </p>
+                <div class="idearayuzleri">
+                    <img class="oyuntasarımcısı" src="img/oyuntasarimcisi.jpg">
+                </div>
+            <p><strong>● Sistem Tasarımcısı: </strong>Sistem tasarımcısı, ilgili oyunun içerisindeki seviyeleri 
+                dikkatli bir şekilde yaratır ve mizanpaj haritası çıkarır.</p>
+            <p><strong>● Oyun Programcısı: </strong>Çoğunlukla bilgisayar mühendislerinin görev aldığı bir 
+                pozisyon olan oyun programcılığı, ilgili oyunun hayata geçirilmesi ile ilgili evreleri kapsar. 
+                Oyun programcısı olarak mesleğinizi icra ederken; kullanıcı arabirimi, araçlar, ağ, taşıma, 
+                komut dosyası ve yapay zeka gibi pek çok farklı alanda uzmanlaşma imkânına sahip olabilirsiniz.</p>
+            <p><strong>● Yapay Zeka Programcısı: </strong>Yapay zeka programcısı bir oyunun temelini, 
+                yani ‘’beynini’’ oluşturur. Oyun içerisinde belirlenen karakterlerin ve ögelerin 
+                davranışlarını belirlemek amacı ile çeşitli algoritmalar oluştururlar. </p>
+            <p><strong>● Oyun Mühendisi: </strong>Oyun geliştirici bölümü olarak tanımlanan çeşitli 
+                bölümlerden lisans derecesi ile mezun olan kişiler, oyun mühendisi olarak oyun 
+                sektöründe faaliyetlerini sürdürür. Oyun mühendisleri, yazılımı ilgili oyunun 
+                gereksinimlerine göre uyarlar. Kod yazımı konusunda da uzman olan oyun mühendisleri, 
+                ilgili oyuna özgü özel yazılımlar oluşturur.</p>
+            <p><strong>● Oyun Sanatçısı: </strong>Oyun sanatçıları çoğunlukla video oyunları 
+                geliştirmek amacı ile faaliyetlerini sürdürür. Video oyunları için 2D ve 3D sanat 
+                oluşturabilen oyun artistleri, oyun ile bağlantısı olan tüm görsel ögeler 
+                üzerinde çalışmalarını sürdürür.</p>
+            <p><strong>● 3D Karakter Sanatçısı: </strong>Adından da anlaşıldığı üzere 
+                3D karakter sanatçıları, video oyunları ve filmler için 3D karakter modelleri 
+                oluşturarak mesleğini icra eder. Aynı zamanda oyun ile ilgili görsel unsurları 
+                da hazırlayan 3D sanatçıları, eskizlerden yola çıkarak çeşitli illüstrasyonlar oluşturur.</p>
+            <h5>Oyun Geliştirici Olmanın Sağladığı Avantajlar Nelerdir? </h5>
+            <p>Modern dünyanın popüler mesleklerinden biri olan oyun geliştiriciliği, pek çok farklı 
+                avantajı da beraberinde getiriyor. 
+                <span>Oyun geliştirici olmanın sağladığı avantajlar</span> işte 
+                şu şekilde sıralanıyor:</p>
+            <p>● Oyun geliştirici olarak mesleğinizi icra ederken hayal dünyanızda tasarladığınız 
+                oyunu tam anlamı ile hayata geçirebilme imkanına sahip olabilirsiniz. Alanında 
+                uzman bir ekip ile birlikte <span>hayaliniz olan oyunu tasarlayabilir</span>, kendi oyununuzun 
+                her safhasına hakim olma fırsatını yakalayabilirsiniz. </p>
+            <p>● Oyun geliştiriciliği, <span>evden çalışma sistemine uyum sağlayabilen</span> bir meslek grubu. 
+                Dolayısıyla bu noktada <span>‘’remote’’</span> çalışma şeklinin sunduğu avantajlardan da 
+                yararlanabilirsiniz. Evinizin konforunda çalışma saatlerinizi kendiniz ayarlayabilir, 
+                çok daha sakin bir ortamda kreatif bir şekilde düşünebilme fırsatına sahip olabilirsiniz. </p>
+            <p>● Dijital oyun sektörü, gün geçtikçe daha çok değerlenen, yatırımlar ve katılımlar 
+                ile değerini artırmayı başaran sektörlerden biri. Dolayısıyla oyun sektörünün 
+                global dünyada kendine çok daha uzun süre boyunca yer edinmeyi başaracağı öngörülüyor. 
+                Oyun sektörünün bu denli ses getirmesi, oyun geliştiriciliği alanındaki 
+                <span>iş imkânlarını</span> da doğrudan artırıyor. </p>
+            <p>● Oyun geliştirici maaşları da oyun geliştirici olmanın sağladığı avantajlar 
+                arasında yer alıyor. Oyun geliştirici olarak yabancı şirketlerde de görev 
+                alabilir, iyi seviyede ücretler kazanma şansına sahip olabilirsiniz.</p>
+            <h5>Oyun Geliştiricilerin Kullanılabileceği Oyun Motorları Nelerdir?</h5>
+            <p>Oyun geliştirici olarak mesleğini icra eden kişilerin kullanabileceği başlıca 
+                oyun motorları bulunuyor. Oyun motorlarını kullanacak olan kişilerin, 
+                oyun motorlarının gerektirdiği yazılım dilleri ve ilgili dilin IDE’si 
+                hakkında bilgi sahibi olması gerekiyor. Oyun geliştiricilerin kullanabileceği 
+                oyun motorları şu şekilde sıralanıyor:</p>
+            <ol>
+                <li class="madde">1. Unreal Engine</li>
+                <li class="madde">2. Unity</li>
+                <li class="madde">3. Game Maker Studio</li>
+                <li class="madde">4. Godot Engine</li>
+                <li class="madde">5. Blender</li>
+            </ol>
+        </div>
+
+
+        <div id="robotik">
+            <h4>Robotik Kodlama</h4>
+            <h5>Robotik Kodlamaya Giriş: Nedir ve Neden Önemlidir?</h5>
+            <p>Robotik kodlama, <span>robotların hareketlerini ve işlevlerini</span> kontrol 
+                etmek için programlama dilleri kullanarak kod yazmayı içeren bir alandır. 
+                Günümüzde endüstriyel robotlar; <span>sağlık, tarım, enerji, savunma ve güvenlik</span> 
+                başta olmak üzere pek çok sektörde, giderek daha sık kullanılmaya başlandı. 
+                Dolayısıyla eğitim-öğrenim süreçlerinde de yazılım, yapay zekâ ve robotik 
+                teknolojisine odaklanma eğilimi arttı. Bu konuda ilerlemek için en iyi eğitim 
+                yaklaşımlarından biri olan STEM+A’ya olan ilgi de elbette… Bu noktada hem 
+                gençlerin hem de ailelerin aklına ortak bir soru geliyor: 
+                <span>“Robotik kodlama nedir? Ne işe yarar?”</span></p>
+            <h5>Robotik Kodlama Nedir?</h5>
+            <p>Robotik kodlama, mühendislik ve programlamayı bir araya getirdiği için 
+                günümüzde oldukça önemli bir hâle geldi. Robotik kodlama alanında yazılan kodlar, 
+                robotun ne zaman, <span>nerede ve nasıl</span> hareket edeceğini belirler. 
+                Böylece robotik teknolojisini, mevcut sorunlara çözüm üretebilecek ya da 
+                ihtiyaçları karşılayabilecek şekilde, verimli kullanmanın yöntemini de sunar.
+                Robotik ve otomasyon kariyeri hedefleyenler için temel bir beceri olarak kabul 
+                edilirken, eleştirel düşünme ve problem çözme becerilerini geliştirmek 
+                isteyen bireyler için de faydalıdır.</p>
+            <h5>Robotik Kodlama Neden Önemlidir?</h5>
+            <p>Günümüzde robotlar, birçok sektörde kullanılan ve işleri otomatikleştiren cihazlar 
+                hâline geldi. Bu teknoloji sayesinde birbirini tekrarlayan işlemler hızlı ve doğru 
+                bir şekilde gerçekleştirebilirken, <span>iş kazaları ve yaralanmaların da önüne geçilebilmektedir</span>.</p>
+            <p>Aynı zamanda <span>yenilenebilir enerji vb.</span> dünyanın ortak sorunu olan pek çok sorunun 
+                çözümlenmesinde ve bu alanda yeni girişimlerin adımlarının atılmasında da robotik 
+                teknolojisi ve kodlama büyük yer öneme sahiptir.</p>
+            <p>Robotik kodlama becerilerinin gelecekteki iş gücü piyasasında da önemli bir 
+                rol oynayacağı şimdiden öngörülüyor. Otomasyon sistemleri giderek yaygınlaştığı 
+                için işverenler, <span>robotik kodlama</span> becerilerine sahip adayları ön planda 
+                tutuyor ve bu becerilere sahip kişiler, <span>iş piyasasındaki</span> rekabet 
+                ortamında daha avantajlı sayılıyor.</p>
+            <p>Bununla birlikte robotik kodlama becerilerinin öğrenilmesi, matematiksel 
+                ve bilimsel kavramların somut bir şekilde deneyimlenmesine ve eleştirel 
+                düşünme becerilerinin geliştirilmesinde de ciddi bir rol oynar. 
+                Öğrenciler, robotik kodlama projeleri sayesinde hem problem çözme 
+                hem de yaratıcı düşünme becerilerini geliştirebilirler. STEM+A 
+                <span>(bilim, teknoloji, mühendislik, matematik, sanat)</span> becerilerinin öğrenilmesine,
+                 matematiksel ve bilimsel kavramların somut bir şekilde deneyimlenmesine yardımcı olur.</p>
+            <h5>Robotik Kodlama Hangi Mesleklerde Kullanılır?</h5>
+            <p><strong>Mekanik Mühendisleri: </strong>Mekanik mühendisleri, endüstriyel 
+                robotların tasarımı, üretimi ve işlevlerinin kontrol edilmesinde önemli 
+                bir rol oynarlar. Mekanik mühendisleri, robotların hareketlerini ve 
+                işlevlerini programlayarak, robotların daha verimli hale gelmesine yardımcı olur.</p>
+            <p><strong>Elektrik ve Elektronik Mühendisleri:</strong> Elektrik ve elektronik 
+                mühendisleri, robotik sistemlerin tasarımı ve üretimi için gerekli olan elektronik 
+                bileşenlerin geliştirirler. Robotik sistemlerin kontrolü için gerekli kodları 
+                yazarak, robotların doğru ve etkili bir şekilde çalışmasını sağlamalarına yardımcı olurlar.</p>
+            <p><strong>Yazılım Geliştiriciler: </strong>Yazılım geliştiricileri, robotların 
+                hareketlerinin ve işlevlerinin kontrol edilmesinde kullanılan programlama 
+                dillerinin yazılmasında ve geliştirilmesinde görev alırlar. Robotların 
+                hareketlerini ve işlevlerini programlamalarına ve robotik kontrol sistemlerinin 
+                geliştirilmesini sağlarlar.</p>
+            <p><strong>Endüstriyel Otomasyon Uzmanları: </strong>Endüstriyel otomasyon uzmanları, 
+                otomasyon sistemlerinin tasarımı, kurulumu ve bakımı için gerekli olan teknik 
+                bilgiye sahip uzmanlardır. Endüstriyel otomasyon uzmanları, robotların işlevlerini 
+                programlamalarına ve kontrol etmelerine yardımcı olur.</p>
+            <p><strong>Tarım Alanında Çalışanlar: </strong>Tarım sektörü, robotik kodlama 
+                teknolojilerinin kullanımına giderek daha fazla ilgi göstermektedir. Tarım 
+                uzmanları, robotik teknolojilerinin kullanımıyla, tarım işlemlerinin 
+                otomatikleştirilmesini ve tarım verimliliğinin artırılmasını sağlayabilirler.</p>
+            <p><strong>Sağlık Uzmanları: </strong>Sağlık sektörü de robotik teknolojilerinin 
+                giderek yaygınlaştığı bir diğer sektördür. Cerrahi işlemler, hasta bakımı ve 
+                rehabilitasyon gibi işlemlerde robotların kullanımına ilişkin çalışmalar 
+                günümüzde hızla devam etmektedir.</p>
+            <p><strong>Eğitim Uzmanları: </strong>Robotik kodlama, STEM+A eğitiminde önemli 
+                bir yere sahiptir. Açılımı bilim, teknoloji, mühendislik, matematik ve 
+                sanat olan STEM+A tüm bu disiplinlerin bir arada, uygulamalı bir şekilde 
+                öğrenilmesi ilkesine dayanır ve robotik kodlama çalışmaları bu eğitim 
+                anlayışında önemli bir rol oynamaktadır.</p>
+            <p><strong>Sanayi ve Üretim Alanında Çalışanlar: </strong>Robotik kodlama 
+                teknolojisi, üretim süreçlerinin otomatikleştirilmesini ve verimliliğinin 
+                artırılmasını sağlar. Bu da endüstriyel üretimde maliyetleri düşürmeye ve 
+                üretim süreçlerinin daha güvenli hale getirilmesinde oldukça önemlidir.</p>
+            <h5>Robotik Kodlama Örnekleri Nelerdir?</h5>
+            <p><strong>Yapay Zekâ: </strong>Robotik kodlama, yapay zekâ 
+                <span>algoritmalarının</span> geliştirilmesinde kullanılan bir teknolojidir. 
+                Bu çalışmalar esnasında yapay zekânın geliştirilme sürecindeki 
+                programlama dillerinin yazılması ve test edilmesi için kullanılır.</p>
+                <div class="idearayuzleri">
+                    <img class="yapayzekar" src="img/yapayzekar.jpg">
+                </div>
+            <p><strong>Otonom Araçlar: </strong>Otonom araçların geliştirilmesinde 
+                de robotik kodlamanın kullanıldığını görebiliriz. Otonom araçlar, 
+                kendi kendine hareket eden araçlardır. Robotik kodlama, 
+                otonom araçların <span>sensörlerini, navigasyon sistemlerini ve diğer işlevlerini</span> 
+                kontrol etmek için kullanılır.</p>
+                <div class="idearayuzleri">
+                    <img class="otonomarac" src="img/otonomarac.jpg">
+                </div>
+            <p><strong>Drone Teknolojileri: </strong>Bu teknolojilerden yararlanan 
+                bir diğer alan da drone’lardır. Bu cihazlar, uçan robotlar olarak 
+                tanımlanır ve günümüzde pek çok sektörde farklı amaçlarla kullanılmaktadır. 
+                Robotik kodlama sayesinde drone’ların <span>hareketlerini kontrol etmek</span>,  
+                <span>veri toplamak, sensörleri kontrol etmek</span> ve diğer işlevleri yerine getirmek 
+                mümkün olmaktadır.</p>
+                <div class="idearayuzleri">
+                    <img class="drone" src="img/drone.jpg">
+                </div>
+            <p><strong>Sanal Gerçeklik: </strong>Sanal gerçeklik, gerçek dünyanın 
+                simülasyonunu yaratan, günümüzün en popüler teknolojilerinden biridir. 
+                Sanal gerçeklik uygulamalarında kodlama yardımıyla  
+                <span>simülasyonların oluşturulması, kontrol edilmesi ve diğer işlevleri</span> yerine getirmek 
+                gibi pek çok işlem yapılabilir.</p>
+                <div class="idearayuzleri">
+                    <img class="vr" src="img/vr.jpg">
+                </div>
+        </div>
+    </section>
+
+    <div>
+    </div>
+
+      
+    <!--Parallax Section-->
+
+    <section id="parallax" class="sectionArea">
+        <div class="parallaxTop">
+            <h2 class="sectionHeader">İŞLETİM SİSTEMLERİ</h2>
+            <p>Ben Linuxcuyum ARKADAŞ!</p>
+        </div>
+    </section>
+
+
+    <!--Engine Section-->
+
+    <section id="engine" class="sectionArea">
+        <div class="engineTop">
+            <h2 class="sectionHeader">·Kısaca Bahsedelim·</h2>
+            <p><strong>Benim Kullandıklarıma Bakacak Olursak (MacOS'i bilmiyorum :D)</strong></p>
+        </div>
+        <div class="engineBody">
+            <div class="container">
+                    <div class="col2">
+                        <div class="engineContainer">
+                            <img src="img/linux.jpg" class="imageOver">
+                            <div class="engineOverlay">
+                                <div class="engineText">
+                                    <p>Linux, özgür ve açık kaynaklı bir işletim sistemidir;</p>
+                                    <p>güvenilirliği, stabilitesi, esnekliği ve geniş yazılım</p> 
+                                    <p>desteği ile bilgisayar kullanıcıları, geliştiriciler</p> 
+                                    <p>ve kurumsal ortamlar arasında yaygın olarak tercih edilir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="engineContainer">
+                            <img src="img/windows.jpg" class="imageOver">
+                            <div class="engineOverlay2">
+                                <div class="engineText">
+                                    <p> Windows, dünya genelinde en yaygın kullanılan işletim</p> 
+                                    <p>sistemlerinden biridir; kullanıcı dostu arayüzü, geniş</p> 
+                                    <p>uygulama desteği ve çeşitli donanım uyumluluğu ile bil-</p>
+                                    <p>bilgisayar kullanıcıları tarafından tercih edilir ve</p>
+                                    <p>çeşitli bilgisayar ortamlarında yaygın olarak kullanılır.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Engine Section-->
+
+    <footer class="sectionArea">
+        <div class="container">
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>OKUDUĞUNUZ İÇİN TEŞEKKÜRLER</h3>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>PRODUCT BY.</h3>
+                    <h3>CİHAN TERAT</h3>                  
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>SOSYAL MEDYA</h3>
+                    <ul class="socialLinks">
+                        <button class="sosyalmedyafb" onclick="sosyalMedya('https:www.facebook.com/profile.php?id=100084534600317')"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="sosyalmedyatw" onclick="sosyalMedya('https:twitter.com/BillGates')"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="sosyalmedyains" onclick="sosyalMedya('https:www.instagram.com/ciyanben/')"><i class="fa-brands fa-instagram"></i></button>
+                        <button onclick="sayfaBasinaGit()">Yukarı Çık</button>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="kayanGorselContainer">
+        <img id="kayanGorsel" src="img/internetmahir.jpg" alt="Kayan Görsel">
+    </section>
+    
+    <div class="randomsayi">
+        <button onclick="uret()">Rastgele Sayı Üret</button>
+        <p id="sonuc">1</p>
+    </div>
+
+    
+
+    <script src="js/javascript.js"></script>
+    
+
 </body>
 </html>
+
+
